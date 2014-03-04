@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/groups/brennecke/jurczak/repos/basic_mapping'
+let g:netrw_dirhist_2='/groups/brennecke/jurczak/repos/basic_mapping/lib'
+let g:netrw_dirhist_3='/home/jurczak/oligodb_app/oligodb/lib/tasks'
+let g:netrw_dirhist_4='/home/jurczak/lablife/LabLife/config/deploy'
+let g:netrw_dirhist_5='/home/jurczak/lablife/LabLife/config'
+let g:netrw_dirhist_6='/home/jurczak/lablife/LabLife/config/deploy'
+let g:netrw_dirhist_7='/home/jurczak/seqarchive/app/assets'
+let g:netrw_dirhist_8='/home/jurczak/seqarchive/blah'

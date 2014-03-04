@@ -1,0 +1,9 @@
+[user]
+	name = Daniel Jurczak
+	email = daniel.jurczak@imba.oeaw.ac.at
+[color]
+  ui = auto
+[alias]
+  lg1 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+[merge]
+  tool = vimdiff
