@@ -3,6 +3,11 @@
 
 set nocompatible                  " Must come first because it changes other options.
 
+
+
+" load ctrl-p
+set runtimepath^=~/.dotfiles/.vim/bundle/ctrlp.vim
+
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
@@ -77,9 +82,7 @@ colorscheme solarized
 
 "call pathogen#infect()
 
-"resize horzontal split window
-nmap <S-Left> <C-W>-
-nmap <S-Right> <C-W>+
-"resize vertical split window
-nmap <S-Up> <C-W>>
-nmap <S-Down> <C-W><
+nnoremap <Left> :vertical resize +5<CR>
+nnoremap <Right> :vertical resize -5<CR>
+nnoremap <Up> :resize +5<CR>
+nnoremap <Down> :resize -5<CR>
