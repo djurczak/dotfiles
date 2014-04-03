@@ -86,3 +86,5 @@ nnoremap <Left> :vertical resize +5<CR>
 nnoremap <Right> :vertical resize -5<CR>
 nnoremap <Up> :resize +5<CR>
 nnoremap <Down> :resize -5<CR>
+
+autocmd Filetype gitcommit setlocal spell textwidth=72
