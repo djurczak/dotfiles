@@ -1,4 +1,5 @@
 EDITOR=/usr/bin/vim
+set -o vi
 
 ## old cluster
 #if [ `hostname` != "piwi" ]; then
