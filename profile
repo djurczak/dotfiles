@@ -41,7 +41,7 @@ function strlen() {
   fi
 }
 
-function bamidxtot {
+function bamtot {
   if [ -z "$1" ]
   then
     echo "no BAM file given"
@@ -50,7 +50,7 @@ function bamidxtot {
   fi
 }
 
-function bamidxtot_unmapped {
+function bamtot_unmapped {
   if [ -z "$1" ]
   then
     echo "no BAM file given"
