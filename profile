@@ -64,6 +64,6 @@ function fastatot {
   then
     echo "no fasta file given"
   else
-    wc -l $@ | ruby -nae '$F[0].to_i /2'
+    wc -l $@ | ruby -nae 'puts $F[0].to_i / 2'
   fi
 }
