@@ -1,18 +1,27 @@
 " Example Vim configuration.
 " Copy or symlink to ~/.vimrc or ~/_vimrc.
 
-set nocompatible                  " Must come first because it changes other options.
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Bundle "tpope/vim-commentary"
+Bundle "kana/vim-textobj-user"
+Bundle "nelstrom/vim-textobj-rubyblock"
+Bundle "kien/ctrlp.vim"
 
-" load ctrl-p
-set runtimepath^=~/.dotfiles/.vim/bundle/ctrlp.vim
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
 
-syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
+syntax enable                     " Turn on syntax highlighting.
 
 runtime macros/matchit.vim        " Load the matchit plugin.
-
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
@@ -80,7 +89,6 @@ colorscheme solarized
 "autocmd InsertEnter * :set number
 "autocmd InsertLeave * :set relativenumber
 
-"call pathogen#infect()
 
 nnoremap <Left> :vertical resize +5<CR>
 nnoremap <Right> :vertical resize -5<CR>
