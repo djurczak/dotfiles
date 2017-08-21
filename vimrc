@@ -10,6 +10,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Bundle "tpope/vim-commentary"
 Bundle "kana/vim-textobj-user"
 Bundle "nelstrom/vim-textobj-rubyblock"
