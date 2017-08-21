@@ -15,8 +15,8 @@ alias tmux='tmux -2'
   [ -s "/usr/local/rvm/scripts/rvm" ] && . "/usr/local/rvm/scripts/rvm"
 #fi
 
-  module add gridengine-client
-  module add brennecke.grp
+  # module add gridengine-client
+  # module add brennecke.grp
 #  module add openmpi
 
 function hgrep() {
