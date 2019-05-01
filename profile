@@ -67,3 +67,12 @@ function fastatot {
     wc -l $@ | ruby -nae 'puts $F[0].to_i / 2'
   fi
 }
+
+function qstat-mine {
+  echo "qstat for `whoami`"
+  qstat -u `whoami`
+}
+
+function module-grep {
+  module avail -t 2>&1 | grep -i $@
+}
