@@ -13,9 +13,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Bundle "tpope/vim-commentary"
-Bundle "kana/vim-textobj-user"
-Bundle "nelstrom/vim-textobj-rubyblock"
-Bundle "kien/ctrlp.vim"
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
