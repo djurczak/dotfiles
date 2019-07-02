@@ -5,20 +5,6 @@ set -o vi
 ## usefulin tmux-in-tmux scenarios
 alias tmux='tmux -2'
 
-## old cluster
-#if [ `hostname` != "piwi" ]; then
-#  source /sw/lenny/etc/brenneckegrp.bash
-#  source /sw/lenny/etc/openmpi.bash
-#fi
-
-#if [ `hostname` = "piwi" ]; then
-  [ -s "/usr/local/rvm/scripts/rvm" ] && . "/usr/local/rvm/scripts/rvm"
-#fi
-
-  # module add gridengine-client
-  # module add brennecke.grp
-#  module add openmpi
-
 function hgrep() {
   if [ -z "$1" ]
   then
@@ -76,3 +62,10 @@ function qstat-mine {
 function module-grep {
   module avail -t 2>&1 | grep -i $@
 }
+
+alias login1='ssh krnju01@login01.binac.uni-tuebingen.de'
+alias login2='ssh krnju01@login02.binac.uni-tuebingen.de'
+
+alias macmini='ssh jurczak@Mac-mini.local'
+alias macair='ssh administrator@macbook-air.local'
+alias nyx='ssh djurczak@nyx.local'
