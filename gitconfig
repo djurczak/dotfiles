@@ -10,5 +10,6 @@
 [core]
 	editor = vim
   autocrlf = input
+	excludesfile = ~/.gitignore
 [commit]
   template = ~/.gitmessage
