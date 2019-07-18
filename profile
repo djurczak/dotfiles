@@ -63,9 +63,14 @@ function module-grep {
   module avail -t 2>&1 | grep -i $@
 }
 
+function kill-detached-mosh {
+  pkill -SIGUSR1 mosh-server
+}
+
 alias login1='ssh krnju01@login01.binac.uni-tuebingen.de'
 alias login2='ssh krnju01@login02.binac.uni-tuebingen.de'
 
 alias macmini='ssh jurczak@Mac-mini.local'
-alias macair='ssh administrator@macbook-air.local'
 alias nyx='ssh djurczak@nyx.local'
+
+alias mosh-nyx='mosh djurczak@nyx.local'
