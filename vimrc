@@ -12,6 +12,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'vim-airline/vim-airline'
+Plugin 'airblade/vim-gitgutter'
 Bundle "tpope/vim-commentary"
 
 " All of your Plugins must be added before the following line
