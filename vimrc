@@ -102,3 +102,4 @@ set textwidth=80
 set colorcolumn=+1
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd BufNewFile,BufRead Rakefile set syntax=ruby

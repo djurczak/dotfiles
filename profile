@@ -71,6 +71,6 @@ alias login1='ssh krnju01@login01.binac.uni-tuebingen.de'
 alias login2='ssh krnju01@login02.binac.uni-tuebingen.de'
 
 alias macmini='ssh jurczak@Mac-mini.local'
-alias nyx='ssh djurczak@nyx.local'
+alias nyx='mosh djurczak@nyx.local'
+alias nyx.ssh = 'ssh djurczak@nyx.local'
 
-alias mosh-nyx='mosh djurczak@nyx.local'
